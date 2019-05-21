@@ -550,7 +550,8 @@ footer {
     width: 100%;
     padding: 50px; }
   .start-quiz h1 {
-    padding-top: calc(25vh - 4rem); }
+    padding-top: calc(25vh - 4rem);
+    font-size: 3.6rem; }
   .example {
     padding: 50px 50px;
     width: calc(100% - 100px); }
