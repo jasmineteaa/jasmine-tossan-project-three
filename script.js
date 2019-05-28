@@ -212,6 +212,7 @@ const $submit = $('input[type=submit]');
 app.startQuiz = function() {
   $('.start-quiz button').on('click', function() {
     $form.addClass('show');
+    app.smoothScroll('.start-quiz button a');
   });
 }
 
@@ -271,7 +272,8 @@ app.calculateScore = function(){
   const score = $selected.filter('.correct').length;
 
   $selected.filter(".correct").next().css('background', '#0080004d');
-  $selected.filter(".incorrect").next().css('background', '#ff00004d')  ;
+  $selected.filter(".incorrect").next().css('background', '#ff00004d');
+
   app.showResult(score);
 }
 
@@ -280,6 +282,8 @@ app.calculateScore = function(){
 app.showResult = (score) => {
   $finalResults.addClass("show");
   $('footer').addClass("show");
+  
+  app.smoothScroll('button[type=submit] a');
 
 
   if (score >= 6) {
@@ -292,6 +296,10 @@ app.showResult = (score) => {
     $finalPara.text('failed...');
     $scoreHTML.html(`<p>score:${score}</p>`);
   }
+  $finalResults.children('h2').fadeIn('1000');
+  $finalResults.children('p').fadeIn('5000');
+  $finalResults.children('.score').fadeIn('5000');
+
   app.restartQuiz();
 }
 
@@ -303,15 +311,25 @@ app.restartQuiz = function() {
     $finalResults.removeClass("show");
     $form.removeClass("show").trigger("reset");
     $submit.prop("disabled", false);
+    app.smoothScroll('.final-results button a');
   });
 }
 
-
+app.smoothScroll = function (selector) {
+  $('html, body').animate(
+    {
+      scrollTop: $($(selector).attr('href')).offset().top,
+    },
+    500,
+    'linear'
+  )
+}
 
 $(function () {
   app.populateQuestions();
-  $form.on("submit", function(event) {
+  $form.submit(function(event) {
     event.preventDefault();
+
     app.calculateScore();
     $submit.prop("disabled", true);
   });

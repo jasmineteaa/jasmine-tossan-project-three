@@ -198,7 +198,9 @@ label{
   margin: 100px auto 80px;
   &:hover{
     background: $primary;
-    color: $secondary;
+    a{
+      color: $secondary;
+    }
   }
 }
 

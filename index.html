@@ -11,28 +11,38 @@
   integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
   <div class="wrapper">
-    <div class="start-quiz">
+    <div class="start-quiz" id="start-quiz">
       <h1>do you even javascript?</h1>
+      <h2>A quiz of common javascript methods</h2>
       <button><a href="#form">start quiz</a></button>
       <div class="text middle"><i class="fab fa-js"></i></div>
     </div> <!--end of start-quiz-->
+
     <form action="" id="form">
       <div class="question-div">
+        <!-- populate questions here -->
       </div>
       <div class="calculate">
-        <input type="submit" value="calculate your score!" />
+        <button type="submit">
+          <a href="#final-results">calculate your score!</a>
+        </button>
+        <!-- <input type="submit" value="calculate your score!" /> -->
       </div>
     </form>
+
     <div class="final-results" id="final-results">
-      <h2>to be honest</h2>
-      <h3>you</h3>
+      <h2>to be honest you</h2>
       <p>are a pro!</p>
-      <div class="score">score: 8/8</div>
-      <button>restart quiz!</button>
+      <div class="score">
+        <!-- populate final score here -->
+      </div>
+      <button><a href="#start-quiz">restart quiz!</a></button>
     </div><!--end of final-results-->
+
     <footer>
       <p>&copy; 2019 definitions, images and examples sourced from medium.freecodecamp.org and MDN</p>
     </footer>
+
   </div> <!--end of wrapper-->
 <body>
   <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>

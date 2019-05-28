@@ -7,11 +7,16 @@
     font-size: 3rem;
     text-transform: capitalize;
     margin-bottom: 20px;
+    display: none;
   }
   h3{
     font-size: 2.5rem;
     text-transform: capitalize;
     margin-bottom: 20px;
+    display: none;
+  }
+  .score{
+    display: none;
   }
   p,
   .score{
@@ -30,7 +35,13 @@
     color: $primary;
     &:hover{
     background: $primary;
-    color: $secondary;
+    a{
+      color: $secondary;
+    }
     }
   }
+}
+
+.final-results + p {
+  display: none;
 }

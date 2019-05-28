@@ -4,7 +4,7 @@
     padding: 50px;
   }
   .start-quiz h1 {
-    padding-top: calc(25vh - 4rem);
+    padding-top: calc(20vh - 4rem);
     font-size: 3.6rem;
   }
   .example {
@@ -47,7 +47,7 @@
   .start-quiz{
     h1{
       font-size: 3.5rem;
-      padding-top: calc(25vh - 3.5rem);
+      padding-top: calc(20vh - 3.5rem);
     }
     button{
       padding: 25px 50px;
@@ -69,10 +69,14 @@
   .start-quiz{
     h1{
       font-size: 3rem;
-      padding-top: calc(25vh - 3.5rem);
+      padding-top: calc(20vh - 3.5rem);
+    }
+    h2{
+      font-size: 1rem;
     }
     button{
       padding: 25px 30px;
+      margin-top: 50px;
     }
   }
   .text{
