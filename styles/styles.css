@@ -185,11 +185,8 @@ textarea {
 .wrapper {
   width: 90%;
   margin: 0 auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(#434343), to(black));
-  background-image: -webkit-linear-gradient(left, #434343 0%, black 100%);
-  background-image: -o-linear-gradient(left, #434343 0%, black 100%);
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
-  background-size: 100% 2em; }
+  background-size: 100% 2em;
+  max-width: 1600px; }
 
 a {
   text-decoration: none;
@@ -200,20 +197,31 @@ img {
   display: block; }
 
 body {
+  background-image: -webkit-gradient(linear, left top, right top, from(#434343), to(black));
+  background-image: -webkit-linear-gradient(left, #434343 0%, black 100%);
+  background-image: -o-linear-gradient(left, #434343 0%, black 100%);
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
   font-size: 125%;
   color: #434343;
-  max-width: 1600px;
-  margin: 0 auto;
-  min-width: 325px; }
+  margin: 0 auto; }
 
 fieldset {
   border: none; }
 
 .start-quiz {
   text-align: center;
-  height: 100vh; }
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly; }
   .start-quiz h1 {
-    padding-top: calc(25vh - 4rem);
     font-family: "Courgette", cursive;
     text-transform: capitalize;
     font-style: italic;
@@ -225,7 +233,6 @@ fieldset {
     font-size: 1.7rem;
     line-height: 1.5;
     letter-spacing: 1px;
-    margin: 30px 30px 0;
     font-family: "Open Sans", sans-serif;
     font-weight: bold; }
 
@@ -237,11 +244,12 @@ fieldset {
   text-transform: uppercase;
   font-weight: bold;
   overflow: hidden;
-  position: relative;
-  margin-top: 80px;
   -webkit-transition: all 300ms;
   -o-transition: all 300ms;
-  transition: all 300ms; }
+  transition: all 300ms;
+  width: 40%;
+  display: block;
+  margin: 0 auto; }
   .start-quiz button:hover {
     background: #d0cfec;
     border: 2px solid #d0cfec; }
@@ -249,8 +257,7 @@ fieldset {
     color: #434343; }
 
 .middle {
-  color: #d0cfec;
-  margin-top: 80px; }
+  color: #d0cfec; }
 
 .text {
   text-transform: uppercase;
@@ -325,7 +332,7 @@ fieldset div {
     transition: all 250ms cubic-bezier(0.4, 0.25, 0.3, 1);
     content: "";
     background: white;
-    border: 3px solid turquoise;
+    border: 3px solid #434343;
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -344,7 +351,7 @@ fieldset div {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: turquoise;
+    background: #434343;
     position: absolute;
     top: 5px;
     left: 5px;
@@ -373,7 +380,7 @@ label {
   padding: 50px 20px;
   width: calc(100% - 40px);
   line-height: 1.4;
-  border-radius: 0 30px 30px 30px;
+  border-radius: 30px 30px 30px 0;
   font-family: "Lato", sans-serif; }
   .example h2 {
     margin-bottom: 10px;
@@ -439,13 +446,14 @@ label {
   content: "need a hint?"; }
 
 [type="checkbox"]:checked ~ .example {
-  top: 100%;
+  bottom: 9%;
   z-index: 10;
   opacity: 1; }
 
 [type="checkbox"]:checked + label {
   background: #d0cfec;
-  color: #434343; }
+  color: #434343;
+  border-radius: 0 30px 30px 30px; }
   [type="checkbox"]:checked + label::after {
     content: "close"; }
 

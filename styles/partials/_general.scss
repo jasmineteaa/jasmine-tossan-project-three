@@ -1,8 +1,9 @@
 .wrapper {
   width: 90%;
   margin: 0 auto;
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
   background-size: 100% 2em;
+  max-width: 1600px;
+
 }
 a {
   text-decoration: none;
@@ -13,11 +14,10 @@ img{
   display: block;
 }
 body{
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
   font-size: 125%;
   color: $secondary;
-  max-width: 1600px;
   margin: 0 auto;
-  min-width: 325px;
 }
 fieldset {
   border: none;
