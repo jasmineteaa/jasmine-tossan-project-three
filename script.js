@@ -260,8 +260,8 @@ app.populateQuestions = function(){
     // when checkbox unchecked - the example div will hide 
     // functionality uses only CSS and the checkbox 'checked' attr
     const $readMore = $(`
-      <input type ="checkbox" class="toggle${index}" id="toggle${index}" name="toggle${index}" />
-      <label for="toggle${index}" class="toggle-label"></label>
+      <input type ="checkbox" class="toggle${index}" id="toggle${index}" name="toggle${index}" tabindex="0"/>
+      <label for="toggle${index}" class="toggle-label" tabindex="0"></label>
     `);
 
     $fieldset.append($legend, $optionInput);
@@ -274,7 +274,7 @@ app.populateQuestions = function(){
     const $title = $(`<h2>Example</h2>`);
     const $example = $(`<p>${example}</p>`);
     const $image = $(`<div class="image"><img src="${image}" alt="${method} example"></div>`)
-    const $mdnButton = $(`<button class="mdnBtn"><a href=${url}>MDN Documentation</a></button>`);
+    const $mdnButton = $(`<button class="mdnBtn"><a target="_blank" href=${url}>MDN Documentation</a></button>`);
   
     $exampleDiv.append($title, $example, $image, $mdnButton);
     $mainDiv.append($exampleDiv);
@@ -301,7 +301,7 @@ app.calculateScore = function(){
       })
     }else {
       // display final results and footer div 
-      $finalResults.addClass("show");
+      $finalResults.css("display", "flex");
       $footer.addClass("show");
   
       // final score is the count of all selected radio inputs with a class of "correct"
@@ -342,7 +342,7 @@ app.showResult = (num) => {
 
   if (num >= 6) {
     $finalPara.text('are a pro!');
-  } else if (num >= 4 && score < 6) {
+  } else if (num >= 4 && num < 6) {
     $finalPara.text('kinda got this?');
   } else {
     $finalPara.text('failed...');

@@ -1,19 +1,20 @@
 .final-results{
   color: $primary;
   text-align: center;
-  padding-bottom: 80px;
   font-family: $headerFont;
+  height: 90vh;
+  // display: flex;
+  flex-direction: column;
+  justify-content: center;
   h2{
     font-size: 3rem;
     text-transform: capitalize;
     margin-bottom: 20px;
-    display: none;
   }
   h3{
     font-size: 2.5rem;
     text-transform: capitalize;
     margin-bottom: 20px;
-    display: none;
   }
   p,
   .score{
@@ -30,6 +31,8 @@
     font-weight: bold;
     text-align: center;
     color: $primary;
+    width: 60%;
+    margin: 0 auto;
     &:hover{
     background: $primary;
     a{
@@ -39,6 +42,3 @@
   }
 }
 
-.final-results + p {
-  display: none;
-}

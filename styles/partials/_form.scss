@@ -127,6 +127,7 @@ label{
   margin: 0 auto;
   transition: all 0.4s;
   border: 2px solid $secondary;
+  &:focus,
   &:hover{
     background: transparent;
     a{
@@ -157,7 +158,9 @@ label{
   letter-spacing: 2px;
   font-family: $questionFont;
   width: calc(100% - 40px);
-  &:hover {
+  &:focus,
+  &:hover,
+  &:active {
     background: $primary;
     color: $secondary;
   }
@@ -196,6 +199,7 @@ label{
   font-family: $questionFont;
   display: block;
   margin: 100px auto 80px;
+  &:focus,
   &:hover{
     background: $primary;
     a{

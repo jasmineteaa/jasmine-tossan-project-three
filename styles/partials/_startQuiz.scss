@@ -24,24 +24,27 @@
 .start-quiz button{
   background: transparent;
   border: 2px solid $primary;
-  padding: 25px 100px;
+  padding: 20px 20px;
   border-radius: 30px;
   text-transform: uppercase;
   font-weight: bold;
   overflow: hidden;
   transition: all 300ms;
-  width: 40%;
+  width: 39%;
   display: block;
   margin: 0 auto;
-  &:hover{
+  letter-spacing: 2px;
+  &:hover,
+  &:focus{
     background: $primary;
     border: 2px solid $primary;
-
+    a {
+      color: $secondary;
+    }
   }
   
-  &:hover a{
-    color: $secondary;
-  }
+  // &:hover a{
+  // }
 }
 
 
@@ -52,7 +55,7 @@
 .text{
   text-transform: uppercase;
   text-align: center;
-  font-size: 12rem;
+  font-size: 9rem;
   font-family: oxygen, sans-serif;
   font-weight: 700;
 }

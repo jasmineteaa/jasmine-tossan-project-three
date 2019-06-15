@@ -5,3 +5,7 @@ footer {
   font-family: $headerFont;
   display: none;
 }
+footer a:hover,
+footer a:focus {
+    text-shadow: 2px 2px 2px blueviolet;
+}
