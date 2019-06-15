@@ -285,7 +285,6 @@ app.populateQuestions = function(){
 
 
 app.calculateScore = function(){
-  // on submit, display final results and footer div 
   $form.submit(function (event) {
     event.preventDefault();
 
@@ -301,6 +300,7 @@ app.calculateScore = function(){
         type: 'warning'
       })
     }else {
+      // display final results and footer div 
       $finalResults.addClass("show");
       $footer.addClass("show");
   
@@ -358,8 +358,7 @@ app.restartQuiz = function() {
     $selected.next().css('background', 'transparent');
     $('input[type=radio]').prop('checked', false);
 
-    // if display none final-results right away, smooth scroll could be choppy
-    // delay dislay none of final-results with setTimeOut
+    // prevent smooth scroll from being choppy, delay "display: none" of final-results with setTimeOut
     setTimeout(function() {
       $finalResults.removeClass("show");
     }, 500);
