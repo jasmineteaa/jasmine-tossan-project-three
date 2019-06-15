@@ -26,181 +26,181 @@ app.quiz =
     "image": "./assets/spread-operator.png",
     "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax"
   },
-  // {
-  //   "method": "for…of iterator",
-  //   "question": "for…of iterator: what is it?",
-  //   "options":
-  //     [
-  //       {
-  //         "name": "questionTwo",
-  //         "status": "incorrect",
-  //         "definition": "runs a callback function once for each array element."
-  //       },
-  //       {
-  //         "name": "questionTwo",
-  //         "status": "incorrect",
-  //         "definition": "joins all array elements into a string."
-  //       },
-  //       {
-  //         "name": "questionTwo",
-  //         "status": "correct",
-  //         "definition": "iterates through the object, allows modification of specific items."
-  //       }
-  //     ],
-  //   "example": "Let’s say you have a toolbox, and you want to show all the tools inside it. The for...of iterator makes it easy.",
-  //   "image": "./assets/for-of.png",
-  //   "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of"
-  // },
-  // {
-  //   "method": "includes()",
-  //   "question": "includes(): what is it?",
-  //   "options":
-  //     [
-  //       {
-  //         "name": "questionThree",
-  //         "status": "correct",
-  //         "definition": "checks if a specific string exists in a collection, returns true or false."
-  //       },
-  //       {
-  //         "name": "questionThree",
-  //         "status": "incorrect",
-  //         "definition": "runs a function on each array element to produce a single value."
-  //       },
-  //       {
-  //         "name": "questionThree",
-  //         "status": "incorrect",
-  //         "definition": "removes the last element from an array:"
-  //       }
-  //     ],
-  //   "example": "Let’s say for whatever reason that you are not aware of what cars you have in your garage, and you need a system to check if the car you want exists or not. includes()to the rescue!",
-  //   "image": "./assets/includes.png",
-  //   "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes"
-  // },
-  // {
-  //   "method": "some()",
-  //   "question": "some(): what is it?",
-  //   "options":
-  //     [
-  //       {
-  //         "name": "questionFour",
-  //         "status": "incorrect",
-  //         "definition": "check if some array values pass a test."
-  //       },
-  //       {
-  //         "name": "questionFour",
-  //         "status": "incorrect",
-  //         "definition": "adds a new element to end of array"
-  //       },
-  //       {
-  //         "name": "questionFour",
-  //         "status": "correct",
-  //         "definition": "checks if some array items satisfy condition, returns true or false."
-  //       }
-  //     ],
-  //   "example": "Let’s say you are a club owner, and don’t care who enters the club. But some are not allowed in, because they have been drinking too much (my creativity at its best). Check out the differences between ES5 and ES6 below:",
-  //   "image": "./assets/some.png",
-  //   "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some"
-  // },
-  // {
-  //   "method": "every()",
-  //   "question": "every(): what is it?",
-  //   "options":
-  //     [
-  //       {
-  //         "name": "questionFive",
-  //         "status": "incorrect",
-  //         "definition": "searches an array for an element value and returns its position."
-  //       },
-  //       {
-  //         "name": "questionFive",
-  //         "status": "correct",
-  //         "definition": "checks whether every array item satisfies condition, returns true or false."
-  //       },
-  //       {
-  //         "name": "questionFive",
-  //         "status": "incorrect",
-  //         "definition": "removes the first array element and \"shifts\" all other elements to a lower index."
-  //       }
-  //     ],
-  //   "example": "The last time you allowed some() underage students to enter the club, someone reported this and the police caught you. This time you won’t let that happen, and you’ll make sure that everyone passes the age limit with the every()operator.",
-  //   "image": "./assets/every.png",
-  //   "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every"
-  // },
-  // {
-  //   "method": "filter()",
-  //   "question": "filter(): what is it?",
-  //   "options":
-  //     [
-  //       {
-  //         "name": "questionSix",
-  //         "status": "incorrect",
-  //         "definition": "searches from the end of the array for an element value and returns its position."
-  //       },
-  //       {
-  //         "name": "questionSix",
-  //         "status": "incorrect",
-  //         "definition": "returns the string that was \"shifted out\""
-  //       },
-  //       {
-  //         "name": "questionSix",
-  //         "status": "correct",
-  //         "definition": "creates a new array with all elements that pass the test."
-  //       }
-  //     ],
-  //   "example": "Let’s say you want to return only prices that are above or equal to 30. Filter out all those other prices…",
-  //   "image": "./assets/filter.png",
-  //   "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"
-  // },
-  // {
-  //   "method": "map()",
-  //   "question": "map(): what is it?",
-  //   "options":
-  //   [
-  //     {
-  //       "name": "questionSeven",
-  //       "status": "correct",
-  //       "definition": "modifies items and returns a new array."
-  //     },
-  //     {
-  //       "name": "questionSeven",
-  //       "status": "incorrect",
-  //       "definition": "returns the value of the first array element that passes a test function."
-  //     },
-  //     {
-  //       "name": "questionSeven",
-  //       "status": "incorrect",
-  //       "definition": "add new items to an array"
-  //     }
-  //     ],
-  //   "example": "Let’s say you have a list of products with prices. Your manager needs a list to show the new prices after they have been taxed by 25%. The map() method can help you out.",
-  //   "image": "./assets/map.png",
-  //   "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map"
-  // },
-  // {
-  //   "method": "reduce()",
-  //   "question": "reduce(): what is it?",
-  //   "options":
-  //     [
-  //       {
-  //         "name": "questionEight",
-  //         "status": "incorrect",
-  //         "definition": "returns the index of the first array element that passes a test function."
-  //       },
-  //       {
-  //         "name": "questionEight",
-  //         "status": "incorrect",
-  //         "definition": "slices out a piece of an array into a new array."
-  //       },
-  //       {
-  //         "name": "questionEight",
-  //         "status": "correct",
-  //         "definition": "it reduces the whole array into one value."
-  //       }
-  //     ],
-  //   "example": "Let’s say you want to find out your total expenses for a week. Use reduce() to get that value.",
-  //   "image": "./assets/reduce.png",
-  //   "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce"
-  // }
+  {
+    "method": "for…of iterator",
+    "question": "for…of iterator: what is it?",
+    "options":
+      [
+        {
+          "name": "questionTwo",
+          "status": "incorrect",
+          "definition": "runs a callback function once for each array element."
+        },
+        {
+          "name": "questionTwo",
+          "status": "incorrect",
+          "definition": "joins all array elements into a string."
+        },
+        {
+          "name": "questionTwo",
+          "status": "correct",
+          "definition": "iterates through the object, allows modification of specific items."
+        }
+      ],
+    "example": "Let’s say you have a toolbox, and you want to show all the tools inside it. The for...of iterator makes it easy.",
+    "image": "./assets/for-of.png",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of"
+  },
+  {
+    "method": "includes()",
+    "question": "includes(): what is it?",
+    "options":
+      [
+        {
+          "name": "questionThree",
+          "status": "correct",
+          "definition": "checks if a specific string exists in a collection, returns true or false."
+        },
+        {
+          "name": "questionThree",
+          "status": "incorrect",
+          "definition": "runs a function on each array element to produce a single value."
+        },
+        {
+          "name": "questionThree",
+          "status": "incorrect",
+          "definition": "removes the last element from an array:"
+        }
+      ],
+    "example": "Let’s say for whatever reason that you are not aware of what cars you have in your garage, and you need a system to check if the car you want exists or not. includes()to the rescue!",
+    "image": "./assets/includes.png",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes"
+  },
+  {
+    "method": "some()",
+    "question": "some(): what is it?",
+    "options":
+      [
+        {
+          "name": "questionFour",
+          "status": "incorrect",
+          "definition": "check if some array values pass a test."
+        },
+        {
+          "name": "questionFour",
+          "status": "incorrect",
+          "definition": "adds a new element to end of array"
+        },
+        {
+          "name": "questionFour",
+          "status": "correct",
+          "definition": "checks if some array items satisfy condition, returns true or false."
+        }
+      ],
+    "example": "Let’s say you are a club owner, and don’t care who enters the club. But some are not allowed in, because they have been drinking too much (my creativity at its best). Check out the differences between ES5 and ES6 below:",
+    "image": "./assets/some.png",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some"
+  },
+  {
+    "method": "every()",
+    "question": "every(): what is it?",
+    "options":
+      [
+        {
+          "name": "questionFive",
+          "status": "incorrect",
+          "definition": "searches an array for an element value and returns its position."
+        },
+        {
+          "name": "questionFive",
+          "status": "correct",
+          "definition": "checks whether every array item satisfies condition, returns true or false."
+        },
+        {
+          "name": "questionFive",
+          "status": "incorrect",
+          "definition": "removes the first array element and \"shifts\" all other elements to a lower index."
+        }
+      ],
+    "example": "The last time you allowed some() underage students to enter the club, someone reported this and the police caught you. This time you won’t let that happen, and you’ll make sure that everyone passes the age limit with the every()operator.",
+    "image": "./assets/every.png",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every"
+  },
+  {
+    "method": "filter()",
+    "question": "filter(): what is it?",
+    "options":
+      [
+        {
+          "name": "questionSix",
+          "status": "incorrect",
+          "definition": "searches from the end of the array for an element value and returns its position."
+        },
+        {
+          "name": "questionSix",
+          "status": "incorrect",
+          "definition": "returns the string that was \"shifted out\""
+        },
+        {
+          "name": "questionSix",
+          "status": "correct",
+          "definition": "creates a new array with all elements that pass the test."
+        }
+      ],
+    "example": "Let’s say you want to return only prices that are above or equal to 30. Filter out all those other prices…",
+    "image": "./assets/filter.png",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"
+  },
+  {
+    "method": "map()",
+    "question": "map(): what is it?",
+    "options":
+    [
+      {
+        "name": "questionSeven",
+        "status": "correct",
+        "definition": "modifies items and returns a new array."
+      },
+      {
+        "name": "questionSeven",
+        "status": "incorrect",
+        "definition": "returns the value of the first array element that passes a test function."
+      },
+      {
+        "name": "questionSeven",
+        "status": "incorrect",
+        "definition": "add new items to an array"
+      }
+      ],
+    "example": "Let’s say you have a list of products with prices. Your manager needs a list to show the new prices after they have been taxed by 25%. The map() method can help you out.",
+    "image": "./assets/map.png",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map"
+  },
+  {
+    "method": "reduce()",
+    "question": "reduce(): what is it?",
+    "options":
+      [
+        {
+          "name": "questionEight",
+          "status": "incorrect",
+          "definition": "returns the index of the first array element that passes a test function."
+        },
+        {
+          "name": "questionEight",
+          "status": "incorrect",
+          "definition": "slices out a piece of an array into a new array."
+        },
+        {
+          "name": "questionEight",
+          "status": "correct",
+          "definition": "it reduces the whole array into one value."
+        }
+      ],
+    "example": "Let’s say you want to find out your total expenses for a week. Use reduce() to get that value.",
+    "image": "./assets/reduce.png",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce"
+  }
 ];
 
 
