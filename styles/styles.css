@@ -269,7 +269,6 @@ fieldset {
 .fa-js {
   text-shadow: 0px 1px 2px #dbd885; }
 
-form,
 .final-results {
   display: none; }
 
@@ -333,8 +332,8 @@ fieldset div {
     content: "";
     background: white;
     border: 3px solid #434343;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     position: absolute;
     top: 0;
@@ -348,13 +347,13 @@ fieldset div {
     -o-transition: all 250ms cubic-bezier(0.4, 0.25, 0.3, 1);
     transition: all 250ms cubic-bezier(0.4, 0.25, 0.3, 1);
     content: "";
-    width: 15px;
-    height: 15px;
+    width: 13px;
+    height: 13px;
     border-radius: 50%;
     background: #434343;
     position: absolute;
     top: 5px;
-    left: 5px;
+    left: 4px;
     opacity: 0;
     margin-left: -30px;
     margin-top: 4px; }
@@ -370,18 +369,18 @@ label {
 .example {
   width: 100%;
   position: absolute;
-  top: 0;
+  bottom: 0;
   overflow: hidden;
   opacity: 0;
-  -webkit-transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
-  -o-transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
-  transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
   z-index: -10;
   padding: 50px 20px;
   width: calc(100% - 40px);
   line-height: 1.4;
-  border-radius: 30px 30px 30px 0;
-  font-family: "Lato", sans-serif; }
+  border-radius: 30px 30px 0 0;
+  font-family: "Lato", sans-serif;
+  -webkit-transition: opacity 0.1s, bottom 1s;
+  -o-transition: opacity 0.1s, bottom 1s;
+  transition: opacity 0.1s, bottom 1s; }
   .example h2 {
     margin-bottom: 10px;
     text-align: center;
@@ -397,7 +396,6 @@ label {
 
 .mdnBtn {
   background: #434343;
-  border: none;
   padding: 15px 20px;
   border-radius: 30px;
   text-transform: uppercase;
@@ -405,10 +403,13 @@ label {
   overflow: hidden;
   cursor: pointer;
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  border: 2px solid #434343; }
   .mdnBtn:hover {
-    background: transparent;
-    border: 2px solid #434343; }
+    background: transparent; }
     .mdnBtn:hover a {
       color: #434343; }
 
@@ -432,10 +433,10 @@ label {
   overflow: hidden;
   text-align: center;
   color: #d0cfec;
-  width: 250px;
   margin: 0 auto;
   letter-spacing: 2px;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  width: calc(100% - 40px); }
   [type="checkbox"] + label:hover {
     background: #d0cfec;
     color: #434343; }
@@ -453,7 +454,7 @@ label {
 [type="checkbox"]:checked + label {
   background: #d0cfec;
   color: #434343;
-  border-radius: 0 30px 30px 30px; }
+  border-radius: 0 0 30px 30px; }
   [type="checkbox"]:checked + label::after {
     content: "close"; }
 
@@ -528,8 +529,6 @@ label {
     font-size: 2.5rem;
     text-transform: capitalize;
     margin-bottom: 20px;
-    display: none; }
-  .final-results .score {
     display: none; }
   .final-results p,
   .final-results .score {
