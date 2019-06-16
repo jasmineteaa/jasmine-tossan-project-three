@@ -360,7 +360,7 @@ app.restartQuiz = function() {
 
     // prevent smooth scroll from being choppy, delay "display: none" of final-results with setTimeOut
     setTimeout(function() {
-      $finalResults.removeClass("show");
+      $finalResults.css("display", "none");
     }, 500);
 
     // reset form
